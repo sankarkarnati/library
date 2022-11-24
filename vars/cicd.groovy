@@ -14,5 +14,5 @@ sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${
 
 def runSelenium(jobname)
 {
-sh 'java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar'
+sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
 }
